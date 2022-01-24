@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import { Submission } from "./components/Submission.js";
+import { Submit } from "./components/Submit.js";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Button color="inherit">View Submissions</Button>
         </Toolbar>
       </AppBar>
-      <Submission />
+      <Submit />
     </div>
   );
 }
