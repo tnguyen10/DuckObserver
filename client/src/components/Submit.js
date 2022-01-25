@@ -48,10 +48,10 @@ export class Submit extends Component {
         .then(function (res) {
           return res.json();
         })
-        .then(function (data) {
-          if (data.status == "500") {
+        .then(function (res) {
+          if (res.status === "500") {
             alert("Submission to server failed, please submit again");
-          } else if ((data.status = "200")) {
+          } else if (res.status === "200") {
             alert("Submission success. Thank you for your time");
             window.location.reload();
           }
@@ -61,7 +61,7 @@ export class Submit extends Component {
   render() {
     return (
       <div>
-        <h1>Submission Page</h1>
+        <h1>Submit Page</h1>
         <i>Help us observe how ducks are fed throughout the world</i>
         <Divider style={{ marginBottom: "2%", marginTop: "2%" }} />
 
