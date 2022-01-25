@@ -8,20 +8,30 @@ import Button from "@mui/material/Button";
 import { Submit } from "./components/Submit.js";
 import { ViewSubmissions } from "./components/ViewSubmissions";
 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h4" style={{ marginRight: "60%" }}>
-            Duck Observer
-          </Typography>
-          <Button color="inherit">Submit</Button>
-          <Button color="inherit">View Submissions</Button>
-        </Toolbar>
-      </AppBar>
-      <Submit />
-      <ViewSubmissions />
+      <Router>
+        <AppBar position="static">
+          <Toolbar>
+            <Typography variant="h4" style={{ marginRight: "60%" }}>
+              Duck Observer
+            </Typography>
+            <Button component={Link} to={"/"} color="inherit">
+              Submit
+            </Button>
+            <Button component={Link} to={"/submissions"} color="inherit">
+              View Submissions
+            </Button>
+          </Toolbar>
+        </AppBar>
+        <Routes>
+          <Route path="/" element={<Submit />} />
+          <Route path="/submissions" element={<ViewSubmissions />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
