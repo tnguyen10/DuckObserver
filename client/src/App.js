@@ -6,20 +6,22 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import { Submit } from "./components/Submit.js";
+import { ViewSubmissions } from "./components/ViewSubmissions";
 
 function App() {
   return (
     <div className="App">
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h4" style={{marginRight:"60%"}}>
+          <Typography variant="h4" style={{ marginRight: "60%" }}>
             Duck Observer
           </Typography>
-            <Button color="inherit">Submit</Button>
-            <Button color="inherit">View Submissions</Button>
+          <Button color="inherit">Submit</Button>
+          <Button color="inherit">View Submissions</Button>
         </Toolbar>
       </AppBar>
       <Submit />
+      <ViewSubmissions />
     </div>
   );
 }
