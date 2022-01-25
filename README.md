@@ -22,7 +22,7 @@ mongo
 
 ## Approach to problem
 1. Started by creating the User submission page, alignning user input labels and textboxes
-2. Setup NodeJS GET and POST route and connecting them with localhost MongoDB
+2. Setup NodeJS GET and POST routes and connecting them with localhost MongoDB
 3. Pull data from GET endpoint and show them on View Submission page
 4. Finally route Submit page and View submission page using react-router
 
