@@ -21,10 +21,10 @@ mongo
 ```
 
 ## Approach to problem
-- Started with creating the User submission page, Alignning user input labels and textboxes
-- Then start to set up NodeJS GET and POST route and connecting them with localhost MongoDB
-- Went back to the front end to pull data from GET endpoint to show on View Submission page
-- And finally route Submit page and View submission page using react-router
+1. Started by creating the User submission page, alignning user input labels and textboxes
+2. Setup NodeJS GET and POST route and connecting them with localhost MongoDB
+3. Pull data from GET endpoint and show them on View Submission page
+4. Finally route Submit page and View submission page using react-router
 
 ## Technologies used and why + Estimate of time spent developing
 - Used React and Material UI to quickly spins up Grid view for data inputs and viewing
